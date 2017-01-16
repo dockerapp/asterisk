@@ -9,4 +9,4 @@ RUN  curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm 
 	&& chmod +x cpanm && ./cpanm --no-wget Asterisk::AGI
 RUN  rm -rf /var/cache/apk/* /tmp/* /var/tmp/* sendEmail-v156.zip cpanm
 
-CMD ["/usr/sbin/asterisk", "-vvvdddf", "-T", "-W", "-U", "root", "-p"]
+CMD ["/usr/sbin/asterisk", "-vvvdddf", "-T", "-U", "root", "-p"]
