@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER dockerapp
 
-RUN apk add --update less curl asterisk asterisk-curl lame sox perl make
+RUN apk add --update asterisk lame sox perl
 WORKDIR /usr/sbin
 RUN wget http://caspian.dotconf.net/menu/Software/SendEmail/sendEmail-v156.zip \
 	&& unzip sendEmail-v156.zip sendEmail.pl \
